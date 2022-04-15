@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="crud">
+        <!--head start-->
+        <div class="head">
+            <h1>CRUDS Project</h1>
+            <p>Product Management System</p>
+        </div>
+        <!--head end-->
+
+        <!--input start-->
+        <div class="input">
+            <input type="text" placeholder="Name Product" id="productname">
+            <input  type="number" placeholder="Count" id="count">
+            <input type="text" placeholder="Category" id="category">
+            <input  onkeyup="getTotal()" type="number" placeholder="Price" id="price">
+            <input  onkeyup="getTotal()" type="number" placeholder="Taxes" id="taxes">              
+            <input  onkeyup="getTotal()" type="number" placeholder="Discount" id="discount"> 
+            <div class="total" id="total"></div>
+            <button id="submit"><ion-icon name="add-outline"></ion-icon></button>
+        </div>
+        <!--input end-->
+
+        <!--output start-->
+        <div  class="output">
+            <div class="search">
+                <input onkeyup="Searchproduct(this.value)" type="text" placeholder="Search" id="search">
+                <button onclick="search(this.id)"  id="searchNameproduct">Search by Name Product</button>
+                <button onclick="search(this.id)" id="searchCategory">Search by Category</button>
+            </div>
+            <div id="deleteAll"></div>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Name Product</th>
+                    <th>Price</th>
+                    <th>Taxes</th>
+                    <th>Discount</th>
+                    <th>Total</th>
+                    <th>Category</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+                <tbody id="tobady"></tbody>
+            </table>
+        </div>
+        <!--output end-->
+
+        <!--Icone link-->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

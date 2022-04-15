@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100;200;300;400&family=Open+Sans&family=Open+Sans+Condensed:ital,wght@1,300&family=Poppins:wght@200;400&family=Roboto+Mono:ital,wght@1,300&family=Rock+Salt&display=swap');
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root
+{
+    --background-color: ##F0F3F4 ;
+    --font-family: 'Open Sans', sans-serif;
+    --box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px ;
+    --color-text:#fff;
+    --border-radius:20px ;
+}
+
+
+body
+{
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family);
+}
+
+.crud
+{
+    width: 80%;
+}
+
+
+.head
+{
+    text-align: center;
+    margin: 10px 0;
+    color: #333;
+}
+
+.head p
+{
+    margin-top: 5px;
+}
+
+
+input{
+    outline: none;
+    border: none;
+    background-color: #333;
+    margin: 5px 0;
+    width: 33%;
+    height: 60px;
+    padding: 8px;
+    font-size: 15px;
+    box-shadow: var(--box-shadow);
+    color: var(--color-text);
+    font-family: var(--font-family);
+    border-radius: var(--border-radius);
+}
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+{
+    -webkit-appearance: none;
+}
+
+
+.total
+{
+    margin-top: 10px;
+    background-color: #333;
+    width: 15%;
+    color: #fff;
+    padding: 10px;
+    border-radius: var(--border-radius);
+}
+
+
+.total::before
+{
+    content: "Total :";
+}
+
+#submit
+{
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
+    border: none;
+    border-radius: var(--border-radius);
+    background-color:brown ;
+    font-size: 20px;
+    box-shadow: var(--box-shadow);
+    color: var(--color-text);
+    cursor: pointer;
+}
+
+
+
+
+.search input
+{
+    width: 50%;
+}
+
+
+
+.search button
+{
+    width: 24.6%;
+    height: 60px;
+    font-size: 20px;
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    background-color: brown;
+    color: var(--color-text);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.search button:hover
+{
+    letter-spacing: 1px;
+
+}
+
+#deleteAll button
+{
+    width: 100%;
+    font-size: 20px;
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    background-color: brown;
+    color: var(--color-text);
+    cursor: pointer;
+    height: 50px;
+    margin: 10px 0;
+    transition: 0.5s;
+}
+
+#deleteAll button:hover
+{
+    letter-spacing: 1px;
+}
+
+table
+{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+table button
+{
+    width: 60px;
+    height: 30px;
+    margin: 5px 0;
+    font-size: 15px;
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    background-color: brown;
+    color: var(--color-text);
+    cursor: pointer;
+}
+
+@media  (max-width:800px){
+
+    input
+    {
+        width: 30%;
+    }
+
+    .total
+    {
+        width: 40%;
+    }
+
+    .search input
+    {
+        width: 30%;
+    }
+
+    .search button 
+    {
+        width: 33%;
+        font-size:12px ;
+    }
+
+}
